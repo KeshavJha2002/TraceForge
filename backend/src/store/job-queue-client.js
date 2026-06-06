@@ -1,0 +1,1 @@
+// Placeholder queue client abstraction.

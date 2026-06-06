@@ -1,0 +1,1 @@
+// Placeholder artifact store writer.

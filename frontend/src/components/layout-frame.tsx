@@ -1,0 +1,1 @@
+// Placeholder layout frame component.
