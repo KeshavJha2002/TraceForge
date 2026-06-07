@@ -1,0 +1,17 @@
+[block] enter:compound
+[block] enter:compound
+[enter] func a=5
+[block] enter:compound
+[enter] func a=4
+[block] enter:compound
+[enter] func a=3
+[block] enter:compound
+[enter] func a=2
+[block] enter:compound
+[enter] func a=1
+[return] func value=1
+[return] func value=21
+[return] func value=51
+[return] func value=91
+[return] func value=141
+[return] main value=141

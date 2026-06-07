@@ -1,5 +1,6 @@
 const express = require('express');
 const { createJob, getJob } = require('./controllers/job-controller');
+const { getTestTrace } = require('./controllers/test-trace-controller');
 
 function createServer() {
   const app = express();
@@ -22,6 +23,7 @@ function createServer() {
     res.json({ ok: true });
   });
 
+  app.get('/test', getTestTrace);
   app.post('/api/jobs', createJob);
   app.get('/api/jobs/:jobId', getJob);
 

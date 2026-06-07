@@ -1,0 +1,928 @@
+{
+  "entrypoints": [
+    "func",
+    "main"
+  ],
+  "files": [
+    {
+      "fileId": "file:source.cpp",
+      "path": "source.cpp"
+    }
+  ],
+  "language": "cpp",
+  "nodes": {
+    "node:0x5816b7704fe8": {
+      "childIds": [
+        "node:0x5816b7754690",
+        "node:0x5816b7754b00"
+      ],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7704fe8",
+      "kind": "TranslationUnit",
+      "parentId": null,
+      "scopeId": "scope:translation:0x5816b7704fe8",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      }
+    },
+    "node:0x5816b77545a0": {
+      "childIds": [],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b77545a0",
+      "initId": null,
+      "kind": "ParamDecl",
+      "loc": {
+        "col": 14,
+        "line": 3,
+        "offset": 30
+      },
+      "name": "a",
+      "parentId": "node:0x5816b7754690",
+      "range": {
+        "end": {
+          "col": 14,
+          "line": 0,
+          "offset": 30
+        },
+        "start": {
+          "col": 10,
+          "line": 0,
+          "offset": 26
+        }
+      },
+      "scopeId": "scope:function:0x5816b7754690",
+      "storage": "param",
+      "symbolId": "symbol:param:a:0x5816b77545a0",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": true
+      },
+      "type": {
+        "text": "int"
+      }
+    },
+    "node:0x5816b7754690": {
+      "bodyId": "node:0x5816b7754a80",
+      "childIds": [
+        "node:0x5816b77545a0",
+        "node:0x5816b7754a80"
+      ],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7754690",
+      "kind": "FunctionDecl",
+      "loc": {
+        "col": 5,
+        "line": 3,
+        "offset": 21
+      },
+      "name": "func",
+      "paramIds": [
+        "node:0x5816b77545a0"
+      ],
+      "parentId": "node:0x5816b7704fe8",
+      "qualifiedName": "func",
+      "range": {
+        "end": {
+          "col": 1,
+          "line": 6,
+          "offset": 85
+        },
+        "start": {
+          "col": 1,
+          "line": 0,
+          "offset": 17
+        }
+      },
+      "returnType": {
+        "text": "int"
+      },
+      "scopeId": "scope:function:0x5816b7754690",
+      "symbolId": "symbol:function:func:0x5816b7754690",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      },
+      "type": {
+        "text": "int (int)"
+      }
+    },
+    "node:0x5816b77547a8": {
+      "childIds": [],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b77547a8",
+      "kind": "Identifier",
+      "name": "a",
+      "parentId": "node:0x5816b7754800",
+      "range": {
+        "end": {
+          "col": 6,
+          "line": 0,
+          "offset": 40
+        },
+        "start": {
+          "col": 6,
+          "line": 0,
+          "offset": 40
+        }
+      },
+      "referencedSymbolId": "symbol:param:a:0x5816b77545a0",
+      "scopeId": "scope:branch:0x5816b7754868",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      }
+    },
+    "node:0x5816b77547c8": {
+      "childIds": [],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b77547c8",
+      "kind": "Literal",
+      "literalKind": "int",
+      "parentId": "node:0x5816b7754800",
+      "range": {
+        "end": {
+          "col": 11,
+          "line": 0,
+          "offset": 45
+        },
+        "start": {
+          "col": 11,
+          "line": 0,
+          "offset": 45
+        }
+      },
+      "scopeId": "scope:branch:0x5816b7754868",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      },
+      "value": 1
+    },
+    "node:0x5816b7754800": {
+      "category": "comparison",
+      "childIds": [
+        "node:0x5816b77547a8",
+        "node:0x5816b77547c8"
+      ],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7754800",
+      "kind": "BinaryExpr",
+      "lhsId": "node:0x5816b77547a8",
+      "op": "<=",
+      "parentId": "node:0x5816b7754868",
+      "range": {
+        "end": {
+          "col": 11,
+          "line": 0,
+          "offset": 45
+        },
+        "start": {
+          "col": 6,
+          "line": 0,
+          "offset": 40
+        }
+      },
+      "rhsId": "node:0x5816b77547c8",
+      "scopeId": "scope:branch:0x5816b7754868",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      }
+    },
+    "node:0x5816b7754820": {
+      "childIds": [],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7754820",
+      "kind": "Identifier",
+      "name": "a",
+      "parentId": "node:0x5816b7754858",
+      "range": {
+        "end": {
+          "col": 21,
+          "line": 0,
+          "offset": 55
+        },
+        "start": {
+          "col": 21,
+          "line": 0,
+          "offset": 55
+        }
+      },
+      "referencedSymbolId": "symbol:param:a:0x5816b77545a0",
+      "scopeId": "scope:branch:0x5816b7754868",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      }
+    },
+    "node:0x5816b7754858": {
+      "childIds": [
+        "node:0x5816b7754820"
+      ],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7754858",
+      "kind": "ReturnStmt",
+      "parentId": "node:0x5816b7754868",
+      "range": {
+        "end": {
+          "col": 21,
+          "line": 0,
+          "offset": 55
+        },
+        "start": {
+          "col": 14,
+          "line": 0,
+          "offset": 48
+        }
+      },
+      "scopeId": "scope:branch:0x5816b7754868",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": true,
+        "isStateful": false
+      }
+    },
+    "node:0x5816b7754868": {
+      "childIds": [
+        "node:0x5816b7754800",
+        "node:0x5816b7754858"
+      ],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7754868",
+      "kind": "IfStmt",
+      "parentId": "node:0x5816b7754a80",
+      "range": {
+        "end": {
+          "col": 21,
+          "line": 0,
+          "offset": 55
+        },
+        "start": {
+          "col": 3,
+          "line": 4,
+          "offset": 37
+        }
+      },
+      "scopeId": "scope:branch:0x5816b7754868",
+      "trace": {
+        "isControlFlow": true,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      }
+    },
+    "node:0x5816b7754888": {
+      "childIds": [],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7754888",
+      "kind": "Identifier",
+      "name": "a",
+      "parentId": "node:0x5816b77548e0",
+      "range": {
+        "end": {
+          "col": 10,
+          "line": 0,
+          "offset": 67
+        },
+        "start": {
+          "col": 10,
+          "line": 0,
+          "offset": 67
+        }
+      },
+      "referencedSymbolId": "symbol:param:a:0x5816b77545a0",
+      "scopeId": "scope:compound:0x5816b7754a80",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      }
+    },
+    "node:0x5816b77548a8": {
+      "childIds": [],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b77548a8",
+      "kind": "Literal",
+      "literalKind": "int",
+      "parentId": "node:0x5816b77548e0",
+      "range": {
+        "end": {
+          "col": 12,
+          "line": 5,
+          "offset": 69
+        },
+        "start": {
+          "col": 12,
+          "line": 5,
+          "offset": 69
+        }
+      },
+      "scopeId": "scope:compound:0x5816b7754a80",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      },
+      "value": 10
+    },
+    "node:0x5816b77548e0": {
+      "category": "arithmetic",
+      "childIds": [
+        "node:0x5816b7754888",
+        "node:0x5816b77548a8"
+      ],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b77548e0",
+      "kind": "BinaryExpr",
+      "lhsId": "node:0x5816b7754888",
+      "op": "*",
+      "parentId": "node:0x5816b7754a50",
+      "range": {
+        "end": {
+          "col": 12,
+          "line": 5,
+          "offset": 69
+        },
+        "start": {
+          "col": 10,
+          "line": 0,
+          "offset": 67
+        }
+      },
+      "rhsId": "node:0x5816b77548a8",
+      "scopeId": "scope:compound:0x5816b7754a80",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      }
+    },
+    "node:0x5816b7754948": {
+      "childIds": [],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7754948",
+      "kind": "Identifier",
+      "name": "a",
+      "parentId": "node:0x5816b77549a0",
+      "range": {
+        "end": {
+          "col": 22,
+          "line": 0,
+          "offset": 79
+        },
+        "start": {
+          "col": 22,
+          "line": 0,
+          "offset": 79
+        }
+      },
+      "referencedSymbolId": "symbol:param:a:0x5816b77545a0",
+      "scopeId": "scope:compound:0x5816b7754a80",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      }
+    },
+    "node:0x5816b7754968": {
+      "childIds": [],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7754968",
+      "kind": "Literal",
+      "literalKind": "int",
+      "parentId": "node:0x5816b77549a0",
+      "range": {
+        "end": {
+          "col": 24,
+          "line": 0,
+          "offset": 81
+        },
+        "start": {
+          "col": 24,
+          "line": 0,
+          "offset": 81
+        }
+      },
+      "scopeId": "scope:compound:0x5816b7754a80",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      },
+      "value": 1
+    },
+    "node:0x5816b77549a0": {
+      "category": "arithmetic",
+      "childIds": [
+        "node:0x5816b7754948",
+        "node:0x5816b7754968"
+      ],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b77549a0",
+      "kind": "BinaryExpr",
+      "lhsId": "node:0x5816b7754948",
+      "op": "-",
+      "parentId": "node:0x5816b7754a28",
+      "range": {
+        "end": {
+          "col": 24,
+          "line": 0,
+          "offset": 81
+        },
+        "start": {
+          "col": 22,
+          "line": 0,
+          "offset": 79
+        }
+      },
+      "rhsId": "node:0x5816b7754968",
+      "scopeId": "scope:compound:0x5816b7754a80",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      }
+    },
+    "node:0x5816b77549c0": {
+      "childIds": [],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b77549c0",
+      "kind": "Identifier",
+      "name": "func",
+      "parentId": "node:0x5816b7754a28",
+      "range": {
+        "end": {
+          "col": 17,
+          "line": 0,
+          "offset": 74
+        },
+        "start": {
+          "col": 17,
+          "line": 0,
+          "offset": 74
+        }
+      },
+      "referencedSymbolId": "symbol:function:func:0x5816b7754690",
+      "scopeId": "scope:compound:0x5816b7754a80",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      }
+    },
+    "node:0x5816b7754a28": {
+      "argIds": [
+        "node:0x5816b77549a0"
+      ],
+      "calleeId": "node:0x5816b77549c0",
+      "calleeName": "func",
+      "childIds": [
+        "node:0x5816b77549c0",
+        "node:0x5816b77549a0"
+      ],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7754a28",
+      "kind": "CallExpr",
+      "parentId": "node:0x5816b7754a50",
+      "range": {
+        "end": {
+          "col": 25,
+          "line": 0,
+          "offset": 82
+        },
+        "start": {
+          "col": 17,
+          "line": 0,
+          "offset": 74
+        }
+      },
+      "scopeId": "scope:compound:0x5816b7754a80",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      }
+    },
+    "node:0x5816b7754a50": {
+      "category": "arithmetic",
+      "childIds": [
+        "node:0x5816b77548e0",
+        "node:0x5816b7754a28"
+      ],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7754a50",
+      "kind": "BinaryExpr",
+      "lhsId": "node:0x5816b77548e0",
+      "op": "+",
+      "parentId": "node:0x5816b7754a70",
+      "range": {
+        "end": {
+          "col": 25,
+          "line": 0,
+          "offset": 82
+        },
+        "start": {
+          "col": 10,
+          "line": 0,
+          "offset": 67
+        }
+      },
+      "rhsId": "node:0x5816b7754a28",
+      "scopeId": "scope:compound:0x5816b7754a80",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      }
+    },
+    "node:0x5816b7754a70": {
+      "childIds": [
+        "node:0x5816b7754a50"
+      ],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7754a70",
+      "kind": "ReturnStmt",
+      "parentId": "node:0x5816b7754a80",
+      "range": {
+        "end": {
+          "col": 25,
+          "line": 0,
+          "offset": 82
+        },
+        "start": {
+          "col": 3,
+          "line": 5,
+          "offset": 60
+        }
+      },
+      "scopeId": "scope:compound:0x5816b7754a80",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": true,
+        "isStateful": false
+      }
+    },
+    "node:0x5816b7754a80": {
+      "childIds": [
+        "node:0x5816b7754868",
+        "node:0x5816b7754a70"
+      ],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7754a80",
+      "kind": "CompoundStmt",
+      "parentId": "node:0x5816b7754690",
+      "range": {
+        "end": {
+          "col": 1,
+          "line": 6,
+          "offset": 85
+        },
+        "start": {
+          "col": 17,
+          "line": 0,
+          "offset": 33
+        }
+      },
+      "scopeId": "scope:compound:0x5816b7754a80",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      }
+    },
+    "node:0x5816b7754b00": {
+      "bodyId": "node:0x5816b7754cd0",
+      "childIds": [
+        "node:0x5816b7754cd0"
+      ],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7754b00",
+      "kind": "FunctionDecl",
+      "loc": {
+        "col": 5,
+        "line": 8,
+        "offset": 92
+      },
+      "name": "main",
+      "paramIds": [],
+      "parentId": "node:0x5816b7704fe8",
+      "qualifiedName": "main",
+      "range": {
+        "end": {
+          "col": 1,
+          "line": 10,
+          "offset": 119
+        },
+        "start": {
+          "col": 1,
+          "line": 0,
+          "offset": 88
+        }
+      },
+      "returnType": {
+        "text": "int"
+      },
+      "scopeId": "scope:function:0x5816b7754b00",
+      "symbolId": "symbol:function:main:0x5816b7754b00",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      },
+      "type": {
+        "text": "int ()"
+      }
+    },
+    "node:0x5816b7754c40": {
+      "childIds": [],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7754c40",
+      "kind": "Literal",
+      "literalKind": "int",
+      "parentId": "node:0x5816b7754c98",
+      "range": {
+        "end": {
+          "col": 15,
+          "line": 0,
+          "offset": 115
+        },
+        "start": {
+          "col": 15,
+          "line": 0,
+          "offset": 115
+        }
+      },
+      "scopeId": "scope:compound:0x5816b7754cd0",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      },
+      "value": 5
+    },
+    "node:0x5816b7754c60": {
+      "childIds": [],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7754c60",
+      "kind": "Identifier",
+      "name": "func",
+      "parentId": "node:0x5816b7754c98",
+      "range": {
+        "end": {
+          "col": 10,
+          "line": 0,
+          "offset": 110
+        },
+        "start": {
+          "col": 10,
+          "line": 0,
+          "offset": 110
+        }
+      },
+      "referencedSymbolId": "symbol:function:func:0x5816b7754690",
+      "scopeId": "scope:compound:0x5816b7754cd0",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      }
+    },
+    "node:0x5816b7754c98": {
+      "argIds": [
+        "node:0x5816b7754c40"
+      ],
+      "calleeId": "node:0x5816b7754c60",
+      "calleeName": "func",
+      "childIds": [
+        "node:0x5816b7754c60",
+        "node:0x5816b7754c40"
+      ],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7754c98",
+      "kind": "CallExpr",
+      "parentId": "node:0x5816b7754cc0",
+      "range": {
+        "end": {
+          "col": 16,
+          "line": 0,
+          "offset": 116
+        },
+        "start": {
+          "col": 10,
+          "line": 0,
+          "offset": 110
+        }
+      },
+      "scopeId": "scope:compound:0x5816b7754cd0",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      }
+    },
+    "node:0x5816b7754cc0": {
+      "childIds": [
+        "node:0x5816b7754c98"
+      ],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7754cc0",
+      "kind": "ReturnStmt",
+      "parentId": "node:0x5816b7754cd0",
+      "range": {
+        "end": {
+          "col": 16,
+          "line": 0,
+          "offset": 116
+        },
+        "start": {
+          "col": 3,
+          "line": 9,
+          "offset": 103
+        }
+      },
+      "scopeId": "scope:compound:0x5816b7754cd0",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": true,
+        "isStateful": false
+      }
+    },
+    "node:0x5816b7754cd0": {
+      "childIds": [
+        "node:0x5816b7754cc0"
+      ],
+      "fileId": "file:source.cpp",
+      "id": "node:0x5816b7754cd0",
+      "kind": "CompoundStmt",
+      "parentId": "node:0x5816b7754b00",
+      "range": {
+        "end": {
+          "col": 1,
+          "line": 10,
+          "offset": 119
+        },
+        "start": {
+          "col": 12,
+          "line": 8,
+          "offset": 99
+        }
+      },
+      "scopeId": "scope:compound:0x5816b7754cd0",
+      "trace": {
+        "isControlFlow": false,
+        "isLoopLike": false,
+        "isMutationPoint": false,
+        "isReturnBoundary": false,
+        "isStateful": false
+      }
+    }
+  },
+  "rootNodeIds": [
+    "node:0x5816b7704fe8"
+  ],
+  "scopes": {
+    "scope:branch:0x5816b7754868": {
+      "id": "scope:branch:0x5816b7754868",
+      "kind": "branch",
+      "ownerNodeId": "node:0x5816b7754868",
+      "parentScopeId": "scope:compound:0x5816b7754a80",
+      "symbolIds": []
+    },
+    "scope:compound:0x5816b7754a80": {
+      "id": "scope:compound:0x5816b7754a80",
+      "kind": "compound",
+      "ownerNodeId": "node:0x5816b7754a80",
+      "parentScopeId": "scope:function:0x5816b7754690",
+      "symbolIds": []
+    },
+    "scope:compound:0x5816b7754cd0": {
+      "id": "scope:compound:0x5816b7754cd0",
+      "kind": "compound",
+      "ownerNodeId": "node:0x5816b7754cd0",
+      "parentScopeId": "scope:function:0x5816b7754b00",
+      "symbolIds": []
+    },
+    "scope:function:0x5816b7754690": {
+      "id": "scope:function:0x5816b7754690",
+      "kind": "function",
+      "ownerNodeId": "node:0x5816b7754690",
+      "parentScopeId": "scope:translation:0x5816b7704fe8",
+      "symbolIds": [
+        "symbol:function:func:0x5816b7754690",
+        "symbol:param:a:0x5816b77545a0"
+      ]
+    },
+    "scope:function:0x5816b7754b00": {
+      "id": "scope:function:0x5816b7754b00",
+      "kind": "function",
+      "ownerNodeId": "node:0x5816b7754b00",
+      "parentScopeId": "scope:translation:0x5816b7704fe8",
+      "symbolIds": [
+        "symbol:function:main:0x5816b7754b00"
+      ]
+    },
+    "scope:translation:0x5816b7704fe8": {
+      "id": "scope:translation:0x5816b7704fe8",
+      "kind": "translationUnit",
+      "ownerNodeId": "node:0x5816b7704fe8",
+      "parentScopeId": null,
+      "symbolIds": []
+    }
+  },
+  "symbols": {
+    "symbol:function:func:0x5816b7754690": {
+      "declaredNodeId": "node:0x5816b7754690",
+      "id": "symbol:function:func:0x5816b7754690",
+      "kind": "function",
+      "name": "func",
+      "qualifiedName": "func",
+      "scopeId": "scope:translation:0x5816b7704fe8",
+      "storage": "global",
+      "type": {
+        "text": "int (int)"
+      }
+    },
+    "symbol:function:main:0x5816b7754b00": {
+      "declaredNodeId": "node:0x5816b7754b00",
+      "id": "symbol:function:main:0x5816b7754b00",
+      "kind": "function",
+      "name": "main",
+      "qualifiedName": "main",
+      "scopeId": "scope:translation:0x5816b7704fe8",
+      "storage": "global",
+      "type": {
+        "text": "int ()"
+      }
+    },
+    "symbol:param:a:0x5816b77545a0": {
+      "declaredNodeId": "node:0x5816b77545a0",
+      "id": "symbol:param:a:0x5816b77545a0",
+      "kind": "param",
+      "name": "a",
+      "qualifiedName": "a",
+      "scopeId": "scope:function:0x5816b7754690",
+      "storage": "param",
+      "type": {
+        "text": "int"
+      }
+    }
+  },
+  "version": "1.0"
+}
